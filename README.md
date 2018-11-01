@@ -6,3 +6,15 @@
 
 可实现每分钟自动检测断网重连
 ##########部分配置文件去百度网盘下载
+
+恢复overlay：
+
+
+rm -rvf /overlay/*
+
+
+cd /
+
+
+tar -xzvf /tmp/overlay_backup.tar.gz
+
