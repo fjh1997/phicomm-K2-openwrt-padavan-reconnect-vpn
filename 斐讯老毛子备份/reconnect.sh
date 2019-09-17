@@ -15,7 +15,7 @@ ping -c 4 1.1.1.1
 		fi
 		if [ $a -le 5 ]
 		then
-		echo $(($a+1))> 1.log
+		echo $(($a+1))> /tmp/1.log
 		else
 		reboot
 		fi
