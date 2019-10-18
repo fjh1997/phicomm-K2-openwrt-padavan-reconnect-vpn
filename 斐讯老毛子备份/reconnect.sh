@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "开始检测"
-ping -c 4 1.1.1.1 
+ping -c 4 -W 10 114.114.114.114
 	if [ "$?" != "0" ];then
 		ps w | grep l2tpd | grep -v grep | awk '{print $1}' | xargs kill -9
 		restart_wan
