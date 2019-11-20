@@ -19,4 +19,8 @@ cd /
 tar -xzvf /tmp/overlay_backup.tar.gz
 
 ## 老毛子保存到闪存
+
+ps w | grep crond | grep -v grep | awk '{print $1}' | xargs kill -9
+echo '*/1 * * * * sh /reconnect.sh' >> /etc/storage/cron/crontabs/root
+crond
 mtd_storage.sh save
