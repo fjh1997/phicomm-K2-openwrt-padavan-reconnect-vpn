@@ -18,5 +18,5 @@ cd /
 
 tar -xzvf /tmp/overlay_backup.tar.gz
 
-##老毛子保存到闪存
+## 老毛子保存到闪存
 mtd_storage.sh save
